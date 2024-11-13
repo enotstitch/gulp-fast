@@ -1,0 +1,22 @@
+{
+  "name": "gulp-fast",
+  "version": "1.0.0",
+  "description": "Gulp — твой незаменимый помощник в веб-разработке! 🚀✨",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enotstitch/gulp-fast.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Anna Kessler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enotstitch/gulp-fast/issues"
+  },
+  "homepage": "https://github.com/enotstitch/gulp-fast#readme"
+}
