@@ -1,0 +1,11 @@
+// * Global styles (Шрифты, переменные, сбросы)
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
+@import 'interface';
+
+// * Main styles
+@import 'chunk/header';
+@import 'chunk/hero';
+@import 'chunk/footer';
