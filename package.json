@@ -9,7 +9,7 @@
 	},
 	"lint-staged": {
 		"**/*.html": "htmlhint --config .htmlhintrc",
-		"**/*.js": "eslint"
+		"**/*.js": "eslint --config .eslintrc.js"
 	},
 	"repository": {
 		"type": "git",
