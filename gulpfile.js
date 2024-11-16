@@ -13,6 +13,7 @@ import { scripts } from './gulp/tasks/scripts.js';
 import { fonts } from './gulp/tasks/fonts.js';
 import { zip } from './gulp/tasks/zip.js';
 import { ftp } from './gulp/tasks/ftp.js';
+import { git } from './gulp/tasks/git.js';
 
 global.app = {
 	isProd: process.argv.includes('--build'),
@@ -38,10 +39,12 @@ const dev = gulp.series(clean, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(clean, mainTasks);
 const deployZip = gulp.series(clean, mainTasks, zip);
 const deployFtp = gulp.series(clean, mainTasks, ftp);
+const deployGit = gulp.series(clean, mainTasks, git);
 
 export { dev };
 export { build };
 export { deployZip };
 export { deployFtp };
+export { deployGit };
 
 gulp.task('default', dev);
