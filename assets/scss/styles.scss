@@ -6,6 +6,6 @@
 @import 'interface';
 
 // * Main styles
-@import 'chunk/header';
-@import 'chunk/hero';
-@import 'chunk/footer';
+@import './chunk/header';
+@import './chunk/hero';
+@import './chunk/footer';
