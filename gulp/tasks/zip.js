@@ -1,5 +1,5 @@
-import { deleteAsync } from "del";
-import gulpZip from "gulp-zip";
+import { deleteAsync } from 'del';
+import gulpZip from 'gulp-zip';
 
 export const clean = async () => {
 	await deleteAsync(app.path.clean);
@@ -12,11 +12,11 @@ export const zip = () => {
 		.pipe(
 			app.plugins.plumber({
 				errorHandler: app.plugins.notify.onError({
-					title: "ZIP",
-					message: "Error: <%= error.message %>",
+					title: 'ZIP',
+					message: 'Error: <%= error.message %>',
 				}),
-			})
+			}),
 		)
 		.pipe(gulpZip(`${app.path.rootFolder}.zip`))
-		.pipe(app.gulp.dest("./"));
+		.pipe(app.gulp.dest('./'));
 };
