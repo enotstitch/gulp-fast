@@ -17,3 +17,5 @@ node_modules
 .vscode/
 build/
 .env
+*.zip
+*.rar
