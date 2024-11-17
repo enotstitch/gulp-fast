@@ -1,3 +1,5 @@
+@use '../vars' as *;
+
 @mixin adaptive-font($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
 	font-size: #{$pcSize}px;

@@ -1,13 +1,10 @@
-import dartSass from 'sass';
-import gulpSass from 'gulp-sass';
+import { sass } from 'gulp5-sass-plugin';
 import autoprefixer from 'gulp-autoprefixer';
 import cleanCss from 'gulp-clean-css';
 import groupCssMediaQueries from 'gulp-group-css-media-queries';
 
-const compilSass = gulpSass(dartSass);
-
-export const styles = () => {
-	return app.gulp
+export const styles = async () => {
+	await app.gulp
 		.src(app.path.src.scss, { sourcemaps: app.isDev })
 		.pipe(
 			app.plugins.plumber({
@@ -17,11 +14,7 @@ export const styles = () => {
 				}),
 			}),
 		)
-		.pipe(
-			compilSass({
-				outputStyle: 'expanded',
-			}),
-		)
+		.pipe(sass({ outputStyle: 'expanded' }))
 		.pipe(
 			autoprefixer({
 				grid: true,
