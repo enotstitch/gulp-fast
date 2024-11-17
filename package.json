@@ -28,7 +28,7 @@
 		"js"
 	],
 	"author": "Anna Kessler",
-	"license": "WTFPL",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/enotstitch/gulp-fast/issues"
 	},
