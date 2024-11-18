@@ -1,7 +1,9 @@
 import htmlmin from 'gulp-htmlmin';
 import typograf from 'gulp-typograf';
+import panini from 'panini';
 
 export const html = () => {
+	panini.refresh();
 	return app.gulp
 		.src(app.path.src.html)
 		.pipe(
@@ -13,10 +15,12 @@ export const html = () => {
 			}),
 		)
 		.pipe(
-			app.plugins.fileInclude({
-				prefix: '@',
-				basepath: '@file',
-				suffix: ';',
+			panini({
+				root: './assets/html/',
+				layouts: './assets/html/layouts/',
+				partials: './assets/html/partials/',
+				helpers: './assets/html/helpers/',
+				data: './assets/html/data/',
 			}),
 		)
 		.pipe(
