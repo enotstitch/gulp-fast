@@ -1,6 +1,6 @@
 export const fonts = () => {
 	return app.gulp
-		.src(`${app.path.src.fonts}`, {})
+		.src(`${app.path.src.fonts}`, { encoding: false })
 		.pipe(
 			app.plugins.plumber({
 				errorHandler: app.plugins.notify.onError({

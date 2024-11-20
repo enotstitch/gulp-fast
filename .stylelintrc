@@ -24,6 +24,16 @@
 			"dollar-variables",
 			"declarations",
 			{
+				"type": "at-rule",
+				"name": "include",
+				"hasBlock": false
+			},
+			{
+				"type": "at-rule",
+				"name": "include",
+				"hasBlock": true
+			},
+			{
 				"type": "rule",
 				"selector": "&::before"
 			},
@@ -83,16 +93,6 @@
 			{
 				"type": "rule",
 				"selector": ".* &"
-			},
-			{
-				"type": "at-rule",
-				"name": "include",
-				"hasBlock": false
-			},
-			{
-				"type": "at-rule",
-				"name": "include",
-				"hasBlock": true
 			},
 			"at-rules"
 		],

@@ -3,10 +3,22 @@ $container-width: 1400;
 $mobile-width: 420;
 
 :root {
-	// * Colors
+	// * Цвета
 	--dark-color: #000;
 	--light-color: #fff;
 	--bg-color: #e27d5f;
 	--accent-color: #9fd4ff;
 	--error-color: #f06464;
+
+	// * Шрифты
+	--font-main: 'Circe', sans-serif;
+	--font-second: 'Poppins', sans-serif;
+	--line-height: 120%;
+
+	// * Визуал
+	--time: 0.2s;
+	--radius: 15px;
+
+	// * Медиа бургера
+	--mobile-width: 768;
 }

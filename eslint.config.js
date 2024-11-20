@@ -30,13 +30,6 @@ export default [
 			'no-debugger': 'warn',
 			'no-var': 'error',
 			'prefer-const': 'error',
-			'no-restricted-syntax': [
-				'error',
-				{
-					selector: 'FunctionDeclaration',
-					message: 'Используйте стрелочные функции вместо обычных.',
-				},
-			],
 			'prefer-arrow-callback': 'error',
 		},
 	},
