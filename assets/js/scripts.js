@@ -1,1 +1,3 @@
-import './scripts/burgerMenu.js';
+import { initHeader } from './modules/header/header.js';
+
+initHeader();

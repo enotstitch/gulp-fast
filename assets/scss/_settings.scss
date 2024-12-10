@@ -29,9 +29,9 @@ body {
 }
 
 .site-container {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
 	min-height: 100%;
 }
 
