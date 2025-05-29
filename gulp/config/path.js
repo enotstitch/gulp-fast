@@ -29,7 +29,7 @@ export const path = {
 		scss: `${srcFolder}/**/*.{scss,sass,css}`,
 		js: `${srcFolder}/**/*.js`,
 		images: [
-			`${srcFolder}/resources/img/**/*.{jpg,jpeg,png,svg,gif}`,
+			`${srcFolder}/resources/img/**/*.{jpg,jpeg,png,webp,svg,gif}`,
 			`!${srcFolder}/resources/img/svg/**/*`,
 		],
 		sprite: `${srcFolder}/resources/img/svg/*.svg`,

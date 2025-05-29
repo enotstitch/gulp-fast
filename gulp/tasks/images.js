@@ -3,6 +3,11 @@ import imagemin from 'gulp-imagemin';
 
 export const images = async () => {
 	await app.gulp
+		.src(`${app.path.src.images}**/*.webp`, { encoding: false })
+		.pipe(app.plugins.newer(app.path.build.images))
+		.pipe(app.gulp.dest(app.path.build.images));
+
+	await app.gulp
 		.src(`${app.path.src.images}**/*.{jpg,jpeg,png}`, { encoding: false })
 		.pipe(
 			app.plugins.plumber({
