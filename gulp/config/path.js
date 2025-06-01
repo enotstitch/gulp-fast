@@ -20,7 +20,7 @@ export const path = {
 		js: `${srcFolder}/js/scripts.js`,
 		images: `${srcFolder}/resources/img/`,
 		sprite: `${srcFolder}/resources/img/svg/*.svg`,
-		fonts: `${srcFolder}/resources/fonts/*.*`,
+		fonts: `${srcFolder}/resources/fonts/`,
 		files: `${srcFolder}/resources/files/**/*.*`,
 	},
 
@@ -33,7 +33,7 @@ export const path = {
 			`!${srcFolder}/resources/img/svg/**/*`,
 		],
 		sprite: `${srcFolder}/resources/img/svg/*.svg`,
-		fonts: `${srcFolder}/resources/fonts/*.woff2`,
+		fonts: `${srcFolder}/resources/fonts/`,
 		files: `${srcFolder}/resources/files/**/*.*`,
 	},
 
