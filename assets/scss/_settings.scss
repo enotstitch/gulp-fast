@@ -51,6 +51,7 @@ img {
 }
 
 .link-reset {
+	display: inline-block;
 	font-family: inherit;
 	font-size: inherit;
 	text-decoration: none;
@@ -72,6 +73,16 @@ img {
 	color: inherit;
 	background-color: transparent;
 	cursor: pointer;
+}
+
+.input-reset {
+	margin: 0;
+	border: none;
+	padding: 0;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background-color: transparent;
 }
 
 .error {
