@@ -22,6 +22,7 @@ export const styles = async () => {
 			}),
 		)
 		.pipe(app.plugins.replace(/@img\//g, '../img/'))
+		.pipe(app.plugins.if(app.isProd, app.plugins.replace(/\.(jpg|jpeg|png)/g, '.webp')))
 		.pipe(app.plugins.if(app.isProd, groupCssMediaQueries()))
 		.pipe(
 			app.plugins.if(
