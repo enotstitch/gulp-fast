@@ -1,10 +1,6 @@
 import { deleteAsync } from 'del';
 import gulpZip from 'gulp-zip';
 
-export const clean = async () => {
-	await deleteAsync(app.path.clean);
-};
-
 export const zip = () => {
 	deleteAsync(`./${app.path.rootFolder}.zip`);
 	return app.gulp
