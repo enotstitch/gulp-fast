@@ -63,7 +63,7 @@
 		"gulp-webp": "^5.0.0",
 		"gulp-zip": "^6.0.0",
 		"gulp5-sass-plugin": "^2.0.4",
-		"htmlhint": "^1.1.4",
+		"htmlhint": "^1.7.0",
 		"husky": "^8.0.0",
 		"imagemin-giflossy": "^5.1.10",
 		"lint-staged": "^15.2.10",
